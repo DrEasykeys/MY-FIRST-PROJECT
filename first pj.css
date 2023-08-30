@@ -1,0 +1,115 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+main {
+  height: 100vh;
+  /* THE BACKGRPOUND IS WHITE AND IS NOT CLEAR FOR THE WRITEUO TO BE SEEN WELL.
+   SO WE HAVE TO MAKE A linear-gradient to make it dark for the writeup to be clear enough */
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url("background.jpg");
+  background-size: cover;
+  color: white;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-right: 150px;
+  padding-left: 150;
+  /* BUT the short code to it is: */
+  /* padding: 0px 150px; 
+  The 0px is for TOP and BOTTOM
+  The 150px is for LEFT and RIGHT
+  When theres only one value in padding, 
+  it serves for all sides TOP BOTTOM LEFT AND RIGHT
+  When its two, the first is for Y-axis which is TOP and BOTTOM, then the second is for X-axis which is 
+  LEFT and RIGHT*/
+}
+header {
+  height: 15vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.body {
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+/* INCREASE THE SIZE OF THE H1 */
+.body h1 {
+  font-size: 40px;
+  font-weight: 900;
+}
+
+/* THIS P MEANS THE P IN THE BODY  */
+
+.body p {
+  margin: 10px 0px;
+}
+
+.body button {
+  width: 150px;
+  height: 40px;
+  background-color: orangered;
+  /* BUTTON COMES WITH A DEFAULT BORDER. SET BORDER TO  NONE BECAUSE WE DONT WANT BORDER */
+  border: none;
+  color: white;
+  font-weight: 600;
+  /* N/B: FONT-WEIGHT DOES NOT GO WITH ANY UNIT OF MEASUREMENT. THE NUMBER JUST STAYS LIKE THAT AS SEEN ABOVE */
+}
+
+.about {
+  height: 60vh;
+  background-color: orangered;
+}
+
+.features {
+  height: 30vh;
+  border-bottom: 1px solid wheat;
+  /* WE ADDED BORDER-BOTTOM BECAUSW OF THE WHITE LINE DOWN THERE */
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+  display: flex;
+}
+
+.cat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25vw;
+}
+
+/* WE WANT TO GET A PERFECT CIRCLE */
+.cat div {
+  display: flex;
+  width: 50px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: white;
+  color: orangered;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.cat b {
+  margin: 10px 0px;
+}
+
+.footer {
+  display: flex;
+  height: 30vh;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
